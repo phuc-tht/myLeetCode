@@ -6,15 +6,13 @@
 class Solution:
     def addTwoNumbers(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
         num1 = str(l1.val)
-        l1 = l1.next
-        while l1:
-            num1 = str(l1.val) + num1
+        while l1.next:
             l1 = l1.next
+            num1 = str(l1.val) + num1
         num2 = str(l2.val)
-        l2 = l2.next
-        while l2:
-            num2 = str(l2.val) + num2
+        while l2.next:
             l2 = l2.next
+            num2 = str(l2.val) + num2
         total = int(num1) + int(num2)
         head = ListNode(total % 10)
         total //= 10
