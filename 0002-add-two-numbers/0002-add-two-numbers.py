@@ -16,13 +16,12 @@ class Solution:
             num2 = str(l2.val) + num2
             l2 = l2.next
         total = int(num1) + int(num2)
-        if total == 0:
-            return(ListNode(0))
-        head = ListNode(0)
+        head = ListNode(total % 10)
+        total //= 10
         current = head
         while total > 0:
             current.next = ListNode(total % 10)
             current = current.next
             total //= 10
-        return(head.next)
+        return(head)
         
