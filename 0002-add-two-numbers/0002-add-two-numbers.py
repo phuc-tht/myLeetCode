@@ -5,24 +5,24 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
-        num = 0
-        factor = 1
+        num1 = str(l1.val)
+        l1 = l1.next
         while l1:
-            num += l1.val * factor
-            factor *= 10
+            num1 = str(l1.val) + num1
             l1 = l1.next
-        factor = 1
+        num2 = str(l2.val)
+        l2 = l2.next
         while l2:
-            num += l2.val * factor
-            factor *= 10
+            num2 = str(l2.val) + num2
             l2 = l2.next
-        if num == 0:
+        total = int(num1) + int(num2)
+        if total == 0:
             return(ListNode(0))
         head = ListNode(0)
         current = head
-        while num > 0:
-            current.next = ListNode(num % 10)
-            num //= 10
+        while total > 0:
+            current.next = ListNode(total % 10)
             current = current.next
+            total //= 10
         return(head.next)
         
