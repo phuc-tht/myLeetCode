@@ -1,6 +1,7 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: list[int], nums2: list[int]) -> float:
         merge = []
+        
         while nums1 and nums2:
             if nums1[0] <= nums2[0]:
                 merge.append(nums1.pop(0))
