@@ -2,6 +2,7 @@ class Solution:
     def longestPalindrome(self, s: str) -> str:
         if not s: return("")
         if len(s) == 1: return(s)
+        
         s_ini = s
         s = "@#" + "#".join(s) + "#$"
         radius = [0] * len(s)
