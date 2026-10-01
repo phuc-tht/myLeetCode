@@ -17,6 +17,5 @@ class Solution:
                 rght_bound = i + radius[i]
         max_len = max(radius)
         center_index = radius.index(max(radius))
-
         start = (center_index - max_len) // 2
         return s_ini[start: start + max_len]
