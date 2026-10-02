@@ -4,11 +4,12 @@ class Solution:
         rows = [""] * numRows
         going_down = False
         current_row = 0
+
         for char in s:
             rows[current_row] += char
             if current_row == 0 or current_row == numRows - 1:
                 going_down = not going_down
             if going_down == True: current_row += 1
             else: current_row -= 1
+        
         return("".join(rows))
-
