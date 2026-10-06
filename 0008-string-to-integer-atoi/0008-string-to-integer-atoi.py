@@ -53,6 +53,7 @@ class Solution:
                 case _:
                     ans = 0
                     factor = 1
+                    
         ans *= sign
         if ans < -2 ** 31: return(-2 ** 31)
         if ans > 2 ** 31 - 1: return(2 ** 31 - 1)
