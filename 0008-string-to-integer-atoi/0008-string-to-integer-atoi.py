@@ -2,6 +2,7 @@ class Solution:
     def myAtoi(self, s: str) -> int:
         s = s.lstrip()
         if not s: return(0)
+        
         sign = 1
         match s[0]:
             case "-":
