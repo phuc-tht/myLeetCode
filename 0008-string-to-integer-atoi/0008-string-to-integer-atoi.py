@@ -2,7 +2,7 @@ class Solution:
     def myAtoi(self, s: str) -> int:
         s = s.lstrip()
         if not s: return(0)
-        
+
         sign = 1
         match s[0]:
             case "-":
@@ -12,6 +12,7 @@ class Solution:
                 sign = 1
                 s = s[1:]
         if not s: return(0)
+        
         num_list = ["0", "1", "2", "3", "4", "5","6", "7", "8", "9"]
         if s[0] not in num_list:
             return(0)
