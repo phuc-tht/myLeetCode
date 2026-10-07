@@ -35,6 +35,7 @@ A comprehensive collection of my Python solutions for problems on LeetCode
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/phuc-tht/myLeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+| [0011-container-with-most-water](https://github.com/phuc-tht/myLeetCode/tree/main/0011-container-with-most-water/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -47,6 +48,7 @@ A comprehensive collection of my Python solutions for problems on LeetCode
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/phuc-tht/myLeetCode/tree/main/0005-longest-palindromic-substring/) | Medium |
+| [0011-container-with-most-water](https://github.com/phuc-tht/myLeetCode/tree/main/0011-container-with-most-water/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -55,4 +57,8 @@ A comprehensive collection of my Python solutions for problems on LeetCode
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/phuc-tht/myLeetCode/tree/main/0005-longest-palindromic-substring/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0011-container-with-most-water](https://github.com/phuc-tht/myLeetCode/tree/main/0011-container-with-most-water/) | Medium |
 <!---LeetCode Topics End-->
