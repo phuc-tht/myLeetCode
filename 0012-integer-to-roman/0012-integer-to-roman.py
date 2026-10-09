@@ -6,12 +6,10 @@ class Solution:
             "X": 10, "IX": 9, "V": 5, "IV": 4, "I": 1
         }
         roman = ""
-
         while num:
             for i in roman_dict:
                 if num >= roman_dict[i]:
                     roman += i
                     num -= roman_dict[i]
                     break
-
         return(roman)
